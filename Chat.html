@@ -1,59 +1,65 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>chat screen</title>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>chat screen</title>
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        
+        <link rel="stylesheet" href="./styles/chat.css" type="text/css" media="all" />
+    </head>
+    <body>
+        <header>
+            <div class="back_icon">
+                <i class="material-icons"> arrow_back </i>
+            </div>
+            <h3> User Name </h3>
+            <div class="menu_icon">
+                <i class="material-icons"> menu </i>
+            </div>
+        </header>
     
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <main>
+            <div class="chat-container">
+                <article class="chat-bubble friend">
+                    <p> occaecat dolore aliqua eiusmod reprehenderit incididunt nostrud duis ea eu aute consectetur duis </p>
+                </article>
+                
+                <article class="chat-bubble user">
+                    <p> eu labore et aliqua consectetur nulla ea consectetur ea reprehenderit ex aliqua ea id magna Lorem culpa est commodo consequat pariatur ex dolor aliqua laborum ullamco Lorem laboris eu enim</p>
+                </article>
+                <article class="chat-bubble user">
+                    <p> eu labore et aliqua consectetur nulla ea consectetur ea ex dolor aliqua laborum ullamco Lorem laboris eu enim</p>
+                </article>
+                
+                <article class="chat-bubble friend">
+                    <p> occaecat dolore aliqua eiusmod reprehenderit incididunt nostrud duis ea eu aute consectetur duis commodo anim officia proident tempor enim qui nulla mollit velit labore reprehenderit excepteur ex irure nostrud irure exercitation sunt irure do labore ipsum ut dolore voluptate officia</p>
+                </article>
+                <article class="chat-bubble friend">
+                    <p> occaecat dolore aliqua eiusmod reprehenderit incididunt nostrud duis ea eu aute consectetur duis commodo anim officia proident tempor enim qui nulla mollit velit labore reprehenderit excepteur ex irure nostrud irure exercitation sunt irure do labore ipsum ut dolore voluptate officia</p>
+                </article>
+                
+                <article class="chat-bubble user">
+                    <p> eu labore et aliqua consectetur nulla ea consectetur ea reprehenderit ex aliqua ea id magna Lorem culpa est commodo consequat pariatur ex dolor aliqua laborum ullamco Lorem laboris eu enim</p>
+                </article>
+            </div>
+        </main>
     
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    
-    <link rel="stylesheet" href="./styles/chat.css" type="text/css" media="all" />
-  </head>
-  <body>
-    <header>
-      <div class="back_icon">
-        <i class="material-icons"> arrow_back </i>
-      </div>
-      <h3> User Name </h3>
-      <div class="menu_icon">
-        <i class="material-icons"> menu </i>
-      </div>
-    </header>
-    
-    <main>
-      <div class="chat-container">
-      <article class="chat-bubble friend">
-        <p> occaecat dolore aliqua eiusmod reprehenderit incididunt nostrud duis ea eu aute consectetur duis </p>
-      </article>
-      
-      <article class="chat-bubble user">
-        <p> eu labore et aliqua consectetur nulla ea consectetur ea reprehenderit ex aliqua ea id magna Lorem culpa est commodo consequat pariatur ex dolor aliqua laborum ullamco Lorem laboris eu enim</p>
-      </article>
-      <article class="chat-bubble user">
-        <p> eu labore et aliqua consectetur nulla ea consectetur ea ex dolor aliqua laborum ullamco Lorem laboris eu enim</p>
-      </article>
-      
-      <article class="chat-bubble friend">
-        <p> occaecat dolore aliqua eiusmod reprehenderit incididunt nostrud duis ea eu aute consectetur duis commodo anim officia proident tempor enim qui nulla mollit velit labore reprehenderit excepteur ex irure nostrud irure exercitation sunt irure do labore ipsum ut dolore voluptate officia</p>
-      </article>
-      <article class="chat-bubble friend">
-        <p> occaecat dolore aliqua eiusmod reprehenderit incididunt nostrud duis ea eu aute consectetur duis commodo anim officia proident tempor enim qui nulla mollit velit labore reprehenderit excepteur ex irure nostrud irure exercitation sunt irure do labore ipsum ut dolore voluptate officia</p>
-      </article>
-      
-      <article class="chat-bubble user">
-        <p> eu labore et aliqua consectetur nulla ea consectetur ea reprehenderit ex aliqua ea id magna Lorem culpa est commodo consequat pariatur ex dolor aliqua laborum ullamco Lorem laboris eu enim</p>
-      </article>
-      </div>
-    </main>
-    
-    <section class="input_section">
-      <div class="input_container">
-        <input type="text" name="message_field" id="message_field" value=""
-        placeholder="write your message"/>
-        <i class="material-icons audio_icon" > mic </i>
-        </div>
-    </section>
-  </body>
+        <section class="input_section">
+            <div class="input_container">
+                <textarea name="message_field" id="message_field" value=""
+                placeholder="write your message" oninput="expandTextarea(this)"></textarea>
+            </div>
+            <div class="button_container">
+                <i class="material-icons send_icon"> send </i>
+                <i class="material-icons audio_icon"> mic </i>
+            </div>
+        </section>
+        
+        <!-- Scripts -->
+        <script src="./scripts/style-aid.js"></script>
+    </body>
 </html>
