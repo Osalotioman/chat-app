@@ -21,7 +21,7 @@ header{
 main{
     background-color: rgb(41,35,35);
     width: 100vw;
-    height: 100vh;
+    height: 83%;
     position: fixed;
     overflow-y: scroll;
     scrollbar-width: none; /* Firefox */

@@ -21,9 +21,10 @@
                 <i class="material-icons"> menu </i>
             </div>
         </header>
-    
+        <br><br><br>        
         <main>
-            <div class="chat-container">
+            <div id="screen" class="chat-container">
+              <!--
                 <article class="chat-bubble friend">
                     <p> occaecat dolore aliqua eiusmod reprehenderit incididunt nostrud duis ea eu aute consectetur duis </p>
                 </article>
@@ -45,6 +46,7 @@
                 <article class="chat-bubble user">
                     <p> eu labore et aliqua consectetur nulla ea consectetur ea reprehenderit ex aliqua ea id magna Lorem culpa est commodo consequat pariatur ex dolor aliqua laborum ullamco Lorem laboris eu enim</p>
                 </article>
+              -->
             </div>
         </main>
     
@@ -54,12 +56,16 @@
                 placeholder="write your message" oninput="expandTextarea(this)"></textarea>
             </div>
             <div class="button_container">
-                <i class="material-icons send_icon"> send </i>
-                <i class="material-icons audio_icon"> mic </i>
+                <i id="send_message" class="material-icons send_icon"> send </i>
+                <i id="send_vn" class="material-icons audio_icon"> mic </i>
             </div>
         </section>
         
         <!-- Scripts -->
         <script src="./scripts/style-aid.js"></script>
+        
+        <script src="jQuery/jquery.min.js"></script>
+        <script src="app/messages.js"></script>
+        <script src="app/load_messages.js"></script>
     </body>
 </html>
